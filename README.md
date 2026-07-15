@@ -1,11 +1,21 @@
-<div align="center">
+# 工作流搭建与发布平台
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+这是一个纯静态工作流搭建原型，支持中文操作符、工具调用注册表、函数库配置、草稿保存、发布校验、模拟运行和导出发布 JSON。
 
-  <h1>Built with AI Studio</h2>
+## 在线部署
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+GitHub Pages 地址：<https://kx6915.github.io/wk-/>
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+如果 GitHub Pages 仍显示旧的 README 页面，请确认仓库 `Settings -> Pages -> Build and deployment -> Source` 已设置为 `GitHub Actions`，并等待最新 workflow 完成。
 
-</div>
+## 本地启动
+
+```bash
+npm start
+```
+
+然后打开：
+
+```text
+http://localhost:5173
+```
