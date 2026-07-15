@@ -61,3 +61,16 @@ textarea { min-height: 72px; resize: vertical; }
 .registry-item span { color: #536079; font-size: 14px; }
 .payload-panel label { display: grid; gap: 8px; font-weight: 700; margin-bottom: 14px; }
 pre { max-height: 450px; overflow: auto; margin: 0; padding: 16px; border-radius: 16px; background: #101827; color: #b9f8df; font-size: 12px; line-height: 1.55; }
+.field-row { display: flex; gap: 10px; }
+.field-row input:first-child { min-width: 260px; }
+.field-row input:last-child { width: 110px; }
+.ghost { border: 1px solid #d8e2f0; background: #fff; color: #172033; border-radius: 12px; padding: 11px 14px; cursor: pointer; font-weight: 700; }
+.palette .ghost { width: 100%; margin-top: 12px; }
+.status { margin-top: 16px; border-radius: 12px; padding: 12px; font-weight: 700; }
+.status.good { background: rgba(93, 242, 214, .2); color: #bafff2; }
+.status.bad { background: rgba(255, 229, 125, .2); color: #fff2a6; }
+.flow-node.disabled { opacity: .55; }
+.node-meta label { margin-left: auto; color: #536079; font-size: 13px; display: inline-flex; align-items: center; gap: 4px; }
+.log-panel { margin-top: 24px; }
+.log-panel ol { margin: 0; padding-left: 22px; color: #4b5870; }
+.log-panel li { margin: 8px 0; }
