@@ -31,6 +31,18 @@
 
 本项目的资源路径使用相对路径，例如 `./src/main.js` 和 `./src/styles.css`，可以兼容 GitHub Pages 的子路径部署。
 
+
+## 自动部署到 GitHub Pages
+
+仓库已经包含 `.github/workflows/pages.yml`。当代码推送到 `main`、`master` 或 `work` 分支时，GitHub Actions 会执行以下步骤：
+
+1. 检出代码。
+2. 运行 `node --check src/main.js` 校验脚本语法。
+3. 上传当前仓库根目录作为 Pages 静态站点。
+4. 发布到 GitHub Pages。
+
+首次使用前需要在 GitHub 仓库中打开 `Settings` -> `Pages`，将 `Build and deployment` 的 `Source` 设置为 `GitHub Actions`。之后推送代码即可自动部署。
+
 ## 自有服务器部署
 
 把仓库放到 Nginx 静态目录即可：
